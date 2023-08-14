@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * main Entry point of the program 
- * Description of a C prgogram to print using printf
+ * main - Entry point
+ *
+ * Description: a C program that prints using printf function
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
