@@ -1,5 +1,2 @@
 #!/bin/bash
-if [ -z "$CFILE" ]; then
-    echo "Please set the environment variable CFILE to the name of the C file."
-    exit 1
-fi
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
