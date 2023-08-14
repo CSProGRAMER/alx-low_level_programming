@@ -21,6 +21,6 @@ int main(void)
 		printf("zero");
 	else
 		printf("negative");
-	printf("\n");	
+	printf("\n");
 	return (0);
 }
