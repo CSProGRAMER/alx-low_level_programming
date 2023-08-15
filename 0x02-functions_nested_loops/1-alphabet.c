@@ -5,7 +5,10 @@
  * Description: a C program that prints using puts function
  * Return: Always 0 (Success)
 */
-void _putchar(char c);
+int _putchar(char c)
+{
+	return write(1, &c, 1);
+}
 
 void print_alphabet(void)
 {
