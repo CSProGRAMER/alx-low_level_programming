@@ -7,8 +7,8 @@
  */
 void print_alphabet(void) /* function print aplhabet */
 {
-	char letter = 'a';	
-	
+	char letter = 'a';
+
 	while (letter <= 'z')
 	{
 		_putchar(letter);
