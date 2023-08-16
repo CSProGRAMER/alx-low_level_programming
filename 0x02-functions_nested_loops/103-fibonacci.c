@@ -8,7 +8,7 @@
 int main(void)
 {
 	long int a = 1, b = 2, c;
-	long int sum = 2; // We start with 2 since the second term (b) is even
+	long int sum = 2; /* We start with 2 since the second term (b) is even */
 
 	while (1)
 	{
