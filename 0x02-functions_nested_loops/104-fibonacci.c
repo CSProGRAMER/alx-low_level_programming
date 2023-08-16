@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <gmp.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
