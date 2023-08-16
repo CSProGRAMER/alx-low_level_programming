@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <gmp.h>
 
 /**
  * main - Entry point
@@ -7,19 +8,31 @@
  */
 int main(void)
 {
-	unsigned long int a = 1, b = 2, c;
+	mpz_t a, b, c;
 	int count;
 
-	printf("%lu, %lu", a, b);
+	mpz_init(a);
+	mpz_init(b);
+	mpz_init(c);
+
+	mpz_set_ui(a, 1);
+	mpz_set_ui(b, 2);
+
+	printf("%s, %s", mpz_get_str(NULL, 10, a), mpz_get_str(NULL, 10, b));
 
 	for (count = 2; count < 98; count++)
 	{
-		c = a + b;
-		printf(", %lu", c);
-		a = b;
-		b = c;
+		mpz_add(c, a, b);
+		gmp_printf(", %Zd", c);
+		mpz_set(a, b);
+		mpz_set(b, c);
 	}
 
 	printf("\n");
+
+	mpz_clear(a);
+	mpz_clear(b);
+	mpz_clear(c);
+
 	return (0);
 }
