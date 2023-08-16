@@ -1,5 +1,6 @@
 #include "print_sign.h"
 #include "_putchar.h"
+#include "main.h"
 #include <stdio.h>
 
 int main(void)
