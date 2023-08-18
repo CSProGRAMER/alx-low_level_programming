@@ -3,26 +3,15 @@
 
 int main(void)
 {
-    int n;
-
-    n = 98;
-    print_number(n);
+    print_number(98);
     _putchar('\n');
-
-    n = 402;
-    print_number(n);
+    print_number(402);
     _putchar('\n');
-    n = 1024;
-    print_number(n);
+    print_number(1024);
     _putchar('\n');
-    n = 0;
-    print_number(n);
+    print_number(0);
     _putchar('\n');
-    n = -98;
-    print_number(n);
-
+    print_number(-98);
     _putchar('\n');
-
     return (0);
 }
-
