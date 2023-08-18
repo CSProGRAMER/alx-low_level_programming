@@ -24,6 +24,7 @@ long largest_prime_factor(long n)
 
 	return factor;
 }
+
 int main(void)
 {
 	long number = 612852475143;
