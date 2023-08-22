@@ -4,5 +4,3 @@
 int _putchar(char c);
 
 #endif /* _PUTCHAR_H */
-
-~          
