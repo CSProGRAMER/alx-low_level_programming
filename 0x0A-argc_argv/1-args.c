@@ -8,6 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
+	(void)argv; /* THE LINE IS ADDED TO SILENCE Warning */
 	printf("%d\n", argc - 1);
 	return (0);
 }
