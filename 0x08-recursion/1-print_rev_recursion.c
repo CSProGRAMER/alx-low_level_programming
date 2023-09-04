@@ -10,5 +10,5 @@ void _print_rev_recursion(char *s)
 	{
 		_print_rev_recursion(s + 1); /* Move to the next character */
 		_putchar(*s); /* Print the current character after the recursion */
-						    }
+	}
 }
