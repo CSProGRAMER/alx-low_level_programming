@@ -15,12 +15,13 @@ int _sqrt_recursion(int n)
 	else
 		return (_sqrt_helper(n, 1)); /* Recursive helper function */
 }
+
 /**
  * _sqrt_helper - Helper function to calculate square root using recursion.
- * @n: The number to calculate the square root for.
- * @guess: The current guess for the square root.
  */
-int _sqrt_helper(int n, int guess)/*_sqrt_helper - Helper function*/
+int _sqrt_helper(int n, int guess)
+
+	/*_sqrt_helper - Helper function*/
 {
 	if (guess * guess == n)
 		return (guess);/* Found the exact square root */
