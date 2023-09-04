@@ -23,9 +23,9 @@ int _sqrt_recursion(int n)
 int _sqrt_helper(int n, int guess)
 {
 	if (guess * guess == n)
-		return (guess);
+		return (guess);/* Found the exact square root */
 	else if (guess * guess > n)
-		return (-1);
+		return (-1);/* n doesn't have a natural square root */
 	else
-		return (_sqrt_helper(n, guess + 1));
+		return (_sqrt_helper(n, guess + 1));/* Try the next guess */
 }
