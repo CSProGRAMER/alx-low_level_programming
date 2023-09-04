@@ -1,0 +1,28 @@
+!<arch>
+_putchar.c/     0           0     0     644     234       `
+#include <unistd.h>
+
+/**
+ *  * _putchar - Writes a character to stdout.
+ *   * @c: The character to be written.
+ *    * Return: On success, 1. On error, -1 is returned.
+ *     */
+int _putchar(char c)
+{
+	    return write(1, &c, 1);
+}
+
+_islower.c/     0           0     0     644     81        `
+#include <unistd.h>
+int _islower(int c) {
+	    return (c >= 'a' && c <= 'z');
+}
+
+
+_isalpha.c/     0           0     0     644     109       `
+#include <unistd.h>
+int _isalpha(int c) {
+	    return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+}
+
+
