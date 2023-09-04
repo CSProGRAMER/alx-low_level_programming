@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
  * @n: The number to calculate the square root for.
  * @guess: The current guess for the square root.
  */
-int _sqrt_helper(int n, int guess)
+int _sqrt_helper(int n, int guess)/*_sqrt_helper - Helper function*/
 {
 	if (guess * guess == n)
 		return (guess);/* Found the exact square root */
