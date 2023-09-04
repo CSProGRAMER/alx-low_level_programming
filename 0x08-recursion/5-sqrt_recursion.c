@@ -15,6 +15,11 @@ int _sqrt_recursion(int n)
 	else
 		return (_sqrt_helper(n, 1)); /* Recursive helper function */
 }
+/**
+ * _sqrt_helper - Helper function to calculate square root using recursion.
+ * @n: The number to calculate the square root for.
+ * @guess: The current guess for the square root.
+ */
 int _sqrt_helper(int n, int guess)
 {
 	if (guess * guess == n)
@@ -22,5 +27,5 @@ int _sqrt_helper(int n, int guess)
 	else if (guess * guess > n)
 		return (-1);
 	else
-		return (_sqrt_helper(n, guess + 1)); 
+		return (_sqrt_helper(n, guess + 1));
 }
