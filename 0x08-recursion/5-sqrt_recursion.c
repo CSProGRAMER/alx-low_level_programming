@@ -20,8 +20,6 @@ int _sqrt_recursion(int n)
  * _sqrt_helper - Helper function to calculate square root using recursion.
  */
 int _sqrt_helper(int n, int guess)
-
-	/*_sqrt_helper - Helper function*/
 {
 	if (guess * guess == n)
 		return (guess);/* Found the exact square root */
