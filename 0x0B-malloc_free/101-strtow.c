@@ -80,15 +80,15 @@ char **strtow(char *str)
 				return (NULL);
 			}
 
-			for (k = 0; k < j; k++)
-				words[i][k] = str[k];
+	for (k = 0; k < j; k++)
+		words[i][k] = str[k];
 
-			words[i][j] = '\0';
-			i++;
-			str += j;
+	words[i][j] = '\0';
+	i++;
+	str += j;
 		}
 	}
 
-	words[i] = NULL; /* Set the last element to NULL */
+	words[i] = NULL; /* Set the*/
 	return (words);
 }
