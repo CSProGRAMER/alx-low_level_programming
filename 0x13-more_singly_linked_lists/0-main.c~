@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "lists.h"
+
+int main(void)
+{
+    listint_t *head;
+    size_t n;
+
+    head = NULL;
+    add_nodeint(&head, 1);
+    add_nodeint(&head, 2);
+    add_nodeint(&head, 3);
+    add_nodeint(&head, 4);
+    add_nodeint(&head, 5);
+
+    n = print_listint(head);
+    printf("Number of nodes: %lu\n", n);
+
+    free_listint(head);
+
+    return (0);
+}
